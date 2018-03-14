@@ -1,25 +1,14 @@
-//
-//  ViewController.swift
-//  Calculator
-//
-//  Created by Mehdi on 3/13/18.
-//  Copyright © 2018 Mehdi Roohianfard. All rights reserved.
-//
-
 import UIKit
 
 class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    @IBOutlet weak var dispalyLable: UILabel!
+   
+    @IBAction func tap(_ sender: UIButton) {
+       self.dispalyLable!.text =
+        sender.titleLabel!.text!
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
+    
+
 
