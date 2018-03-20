@@ -3,10 +3,17 @@ import UIKit
 class MainViewController: UIViewController {
     
     @IBOutlet weak var dispalyLable: UILabel!
+    private var score = 0
    
     @IBAction func tap(_ sender: UIButton) {
-       self.dispalyLable!.text =
-        sender.titleLabel!.text!
+        score += 1
+        dispalyLable.text = "\(score)"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        dispalyLable.text = "\(score)"
+       
     }
 }
     
